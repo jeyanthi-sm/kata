@@ -1,0 +1,28 @@
+{
+  "name": "kata",
+  "jest": {
+    "verbose": true
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "romanNumerals.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeyanthi-sm/kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeyanthi-sm/kata/issues"
+  },
+  "homepage": "https://github.com/jeyanthi-sm/kata#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1"
+  }
+}
