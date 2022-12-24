@@ -1,5 +1,5 @@
 function toRomanNumeral(inputNumber) {
-    function suffixDigits(inpNum){
+    function suffixDigits(inpNum) {
         let resstr = "";
         while (inpNum > 0) {
             if (inpNum > 5) {
@@ -12,18 +12,18 @@ function toRomanNumeral(inputNumber) {
             }
 
         }
-    return resstr;
+        return resstr;
 
     }
 
-    function prefixDigits(inpNum,denom){
+    function prefixDigits(inpNum, denom) {
         let resstr = "";
         while (inpNum > 0) {
             if (inpNum === 9) {
                 resstr += romanObj[denom];
                 inpNum = 1;
             }
-         
+
             else if (inpNum === 4) {
                 resstr += romanObj[denom];
                 inpNum = 1;
@@ -34,12 +34,12 @@ function toRomanNumeral(inputNumber) {
             }
 
         }
-    return resstr;
+        return resstr;
 
     }
 
 
-    const romanObj = {1:"I", 10:"X", 5:"V"};
+    const romanObj = { 1: "I", 10: "X", 5: "V" };
 
     if ((inputNumber === 1) || (inputNumber === 10) || (inputNumber === 5))
         return romanObj[inputNumber];
@@ -52,6 +52,6 @@ function toRomanNumeral(inputNumber) {
     else {
         return (suffixDigits(inputNumber));
     }
-    };
+};
 
 export { toRomanNumeral };
